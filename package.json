@@ -13,7 +13,8 @@
   "scripts": {
     "lint": "eslint .",
     "test": "mocha tests --recursive",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "pack": "npm version patch && npm publish"
   },
   "dependencies": {
     "requireindex": "^1.2.0"

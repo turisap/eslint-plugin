@@ -1,0 +1,13 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["@types/node"],
+    "noEmit": true,
+    "allowJs": true
+  },
+  "include": [
+    ".eslintrc.js",
+    "./rules/**/*.ts",
+    "./typings/**/*.ts"
+  ]
+}

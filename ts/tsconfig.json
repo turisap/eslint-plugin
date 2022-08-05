@@ -4,8 +4,8 @@
     "declaration": false,
     "declarationMap": false,
     "outDir": "../dist",
-    "rootDir": "../",
+    "rootDir": ".",
     "resolveJsonModule": true
   },
-  "include": ["./rules", "./typings/**/*.ts"]
+  "include": ["./index.ts", "./typings/**/*.ts"]
 }

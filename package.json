@@ -8,14 +8,14 @@
     "eslint-plugin"
   ],
   "author": "Kirill Shakirov",
-  "main": "./lib/index.js",
-  "exports": "./lib/index.js",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
   "scripts": {
     "lint": "eslint .",
     "test": "mocha tests --recursive",
     "prepare": "husky install",
-    "pack": "npm version patch && npm publish",
-    "build": ""
+    "pack": "npm version patch && npm run build && npm publish",
+    "build": "cd ts && tsc -b ./tsconfig.json"
   },
   "dependencies": {
     "@typescript-eslint/utils": "^5.32.0",

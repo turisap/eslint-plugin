@@ -8,6 +8,7 @@
   "include": [
     ".eslintrc.js",
     "./rules/**/*.ts",
-    "./typings/**/*.ts"
+    "./typings/**/*.ts",
+    "index.ts"
   ]
 }

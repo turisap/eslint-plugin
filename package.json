@@ -10,6 +10,7 @@
   "author": "Kirill Shakirov",
   "files": [
     "dist",
+    "lib",
     "package.json"
   ],
   "main": "dist/index.js",

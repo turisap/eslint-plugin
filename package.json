@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-turisap",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "no-magic-numbers enhanced",
   "keywords": [
     "eslint",
@@ -8,8 +8,10 @@
     "eslint-plugin"
   ],
   "author": "Kirill Shakirov",
-  "main": "dist/index.js",
-  "exports": "dist/index.js",
+  "files": [
+    "dist",
+    "package.json"
+  ],
   "scripts": {
     "lint": "eslint . --cache",
     "test": "mocha tests --recursive",

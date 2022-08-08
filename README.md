@@ -1,6 +1,6 @@
 # eslint-plugin-turisap
 
-A set of customized ESLint rules
+A set of customized ESLint and `@typescript/eslint` rules
 
 ## Installation
 

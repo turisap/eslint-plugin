@@ -1,5 +1,5 @@
 import noMagicNumbers from "./no-magic-numbers";
 
-export {
-    noMagicNumbers
+export default {
+    'no-magic-numbers': noMagicNumbers,
 }

@@ -1,4 +1,4 @@
-import * as rules from './rules';
+import rules from './rules';
 
 export = {
     rules,

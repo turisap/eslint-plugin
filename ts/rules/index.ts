@@ -1,1 +1,5 @@
-export * as ruls from '.'
+import noMagicNumbers from "./no-magic-numbers";
+
+export {
+    noMagicNumbers
+}

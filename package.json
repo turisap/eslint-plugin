@@ -11,10 +11,10 @@
   "main": "./dist/index.js",
   "exports": "./dist/index.js",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint . --cache",
     "test": "mocha tests --recursive",
     "prepare": "husky install",
-    "pack": "npm version patch && npm run build && npm publish",
+    "pack": "npm run build && npm version patch && npm publish",
     "build": "cd ts && tsc -b ./tsconfig.json"
   },
   "dependencies": {

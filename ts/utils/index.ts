@@ -1,4 +1,5 @@
 import { ESLintUtils } from '@typescript-eslint/utils';
+import * as path from 'path'
 
 const  { deepMerge } = ESLintUtils;
 
@@ -12,9 +13,11 @@ interface RuleMap {
 
 type RuleId = keyof RuleMap;
 
+const getRulePath = (ruleId: string): string => path.join(__dirname, `../../lib/rules/${ruleId}`)
+
 const getESLintCoreRule: <R extends RuleId>(ruleId: R) => RuleMap[R] =
          <R extends RuleId>(ruleId: R): RuleMap[R] =>
-            require(`eslint/lib/rules/${ruleId}`) as RuleMap[R];
+            require(getRulePath(ruleId)) as RuleMap[R];
 
 export {
     deepMerge,

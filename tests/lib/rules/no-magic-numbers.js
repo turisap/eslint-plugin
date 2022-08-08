@@ -291,6 +291,14 @@ ruleTester.run("no-magic-numbers", rule, {
         {
             code: "var foo = { color: [123, 134, 255] }",
             options: [{ allowRGBa: true }]
+        },
+        {
+            code: "setTimeout(function() {return 'nowhere';}, 300);",
+            options: [{ allowedCalls: ['setTimeout']}]
+        },
+        {
+            code: "setTimeout(call, 300);",
+            options: [{ allowedCalls: ['setTimeout']}]
         }
     ],
     invalid: [
@@ -909,6 +917,13 @@ ruleTester.run("no-magic-numbers", rule, {
                 { messageId: "noMagic", data: { raw: "255" }, line: 1 },
                 { messageId: "noMagic", data: { raw: "255" }, line: 1 },
                 { messageId: "noMagic", data: { raw: "1.2" }, line: 1 }
+            ]
+        },
+        {
+            code: "parseUser(user, 10)",
+            env: { es6: true },
+            errors: [
+                { messageId: "noMagic", data: { raw: "10" }, line: 1 },
             ]
         }
     ]

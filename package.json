@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-turisap",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "no-magic-numbers enhanced",
   "keywords": [
     "eslint",

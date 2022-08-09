@@ -18,7 +18,7 @@
     "lint": "eslint . --cache",
     "test": "mocha tests --recursive",
     "prepare": "husky install",
-    "pack": "npm run build && npm version patch && npm publish",
+    "release": "npm run build && npm version patch && npm publish",
     "build": "cd ts && tsc -b ./tsconfig.json"
   },
   "dependencies": {

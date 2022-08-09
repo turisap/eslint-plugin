@@ -299,6 +299,9 @@ ruleTester.run("no-magic-numbers", rule, {
         {
             code: "setTimeout(call, 300);",
             options: [{ allowedCalls: ['setTimeout']}]
+        },
+        {
+            code: "JSON.stringify({}, null, 2)"
         }
     ],
     invalid: [

@@ -301,6 +301,10 @@ ruleTester.run("no-magic-numbers", rule, {
             options: [{ allowedCalls: ['setTimeout']}]
         },
         {
+            code: "Math.pow(999, x)",
+            options: [{ allowedCalls: ['Math.pow']}]
+        },
+        {
             code: "JSON.stringify({}, null, 2)"
         }
     ],
